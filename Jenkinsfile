@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Build'
+        echo 'Build images'
+        sh 'git clone https://github.com/ayoinc/Foodie.git'
       }
     }
   }
