@@ -1,12 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Say Hello') {
+    stage('Check') {
       steps {
-        sh '''!/bin/sh
-
-
-echo "Hello"'''
+        kubernetesDeploy(secretName: 'default-token-x4brx', secretNamespace: 'default')
       }
     }
   }
