@@ -1,4 +1,4 @@
-FROM debian:stretch-20211201-slim
+FROM debian:stretch-20220418-slim
 
 LABEL "com.github.actions.name"="Hello World"
 LABEL "com.github.actions.description"="Write arguments to the standard output"
